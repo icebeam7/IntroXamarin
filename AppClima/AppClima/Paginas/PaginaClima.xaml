@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppClima.Paginas.PaginaClima">
+    <ScrollView>
+        <StackLayout BackgroundColor="#545454">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">
+                    <Label Text="Clima de una ciudad" TextColor="White" 
+                           FontAttributes="Bold" FontSize="Medium" />
+                    <Label Text="Ciudad" TextColor="#a8a8a8" FontSize="Small"/>
+                    <Entry x:Name="txtCiudad" TextColor="White" BackgroundColor="Black" />
+                </StackLayout>
+                <StackLayout Padding="0,0,0,10" VerticalOptions="End">
+                    <Button x:Name="btnBuscar" Text="Buscar clima" WidthRequest="185" 
+                            BorderWidth="1" Clicked="btnBuscar_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="10,10,10,10" HorizontalOptions="Start">
+                <Label Text="Ubicación" TextColor="#a8a8a8" FontSize="Small"/>
+                <Label Text="{Binding Titulo}" TextColor="White" FontSize="Medium"/>
+                <Label Text="Temperatura" TextColor="#a8a8a8" FontSize="Small"/>
+                <Label Text="{Binding Temperatura}" TextColor="White" FontSize="Medium"/>
+                <Label Text="Viento" TextColor="#a8a8a8" FontSize="Small"/>
+                <Label Text="{Binding Viento}" TextColor="White" FontSize="Medium"/>
+                <Label Text="Humedad" TextColor="#a8a8a8" FontSize="Small"/>
+                <Label Text="{Binding Humedad}" TextColor="White" FontSize="Medium"/>
+                <Label Text="Visibilidad" TextColor="#a8a8a8" FontSize="Small"/>
+                <Label Text="{Binding Visibilidad}" TextColor="White" FontSize="Medium"/>
+                <Label Text="Amanecer" TextColor="#a8a8a8" FontSize="Small"/>
+                <Label Text="{Binding Amanecer}" TextColor="White" FontSize="Medium"/>
+                <Label Text="Ocaso" TextColor="#a8a8a8" FontSize="Small"/>
+                <Label Text="{Binding Ocaso}" TextColor="White" FontSize="Medium"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
